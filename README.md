@@ -1,5 +1,4 @@
 <h1> How to run this project: </h1>
-<br> 
 <h3>Step-1: Copy and Paste in terminal : git clone https://github.com/letscodeshivansh/Annapurna24 </h3>
 <h3>Step-2: Now open Live index.html file </h3>
 <br>
