@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annapurna</title>
+    <style>
+       @font-face {
+            font-family: "heading-font";
+            src: url('annapurna/Noto_Serif/NotoSerif-VariableFont_wdth,wght.ttf');
+        }
+    </style>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+</head>
+<body>
+
+<!--main landing page-->
+    <div class="container4">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for = "check" class="checkbtn">
+                <i class="fas fa-bars" style="cursor: pointer;"></i>
+            </label>
+            
+            <img src="mainlogo-photoaidcom-invert-removebg-preview.png" alt="" style="height: 64px; width:64px; margin-top: 9px; margin-left: 100px">
+            <label class="logo" style="padding-left: 5px; font-family: heading-font; position: fixed;padding-top:19px">ANNAPURNA</label>
+
+
+            <ul>
+                
+                <li><a href="index">HOME</a></li>
+                <li><a href="services">SERVICES</a></li>
+                <li><a href="aboutus">ABOUT US</a></li>
+                <li><a href="#">
+                    Hi, <% if (typeof loggedInUsername !== 'undefined' && loggedInUsername) { %>
+                    <p><%= loggedInUsername %></p>
+                    <% } %>
+                </a></li>
+
+            </ul>    
+        </nav>
+        
+
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                
+                <h1 class = "logos" style = "font-family: heading-font;">ANNAPURNA</h1>
+            </div>
+            
+            <div class="moto" style="padding-top: 200px; padding-bottom: 0px; padding-right: 70px; width: 25%; font-size:20px; color: rgb(187, 187, 187);">
+                <h4 style = "font-family: monospace; ">
+                    "Empowering individuals with the knowledge and resources to reduce food waste is key to fostering a culture of well-being and sustainability."
+                </h4>
+                <div><a href="login.php">
+                    <a href="login.html">
+                    <button class = "btn btn-info btn-lg" style="cursor: pointer;">
+                        Join
+                    </button></a>
+                    </a>
+                </div>
+
+            </div>
+        </div><hr class="hr1" color="red" />
+        <div class = "hands">
+            
+            <img src="2.png" style="width: 100%;">
+            <hr class="hr2"/> 
+        </div>
+        
+    </<div>
+        
+
+<!--introduction-->
+    <div class="container3" >
+        <div class="slide1">
+            
+            <div class="intro">
+                <h2 style = "font-family: heading-font;">Introduction</h2>
+                <br>
+                
+                <h4 style = "font-family: monospace; font-size:20px;">"Welcome to Annapurna – your gateway to a world where surplus food meets those in need. Join us in our mission to combat hunger and food waste. Discover surplus food listings, connect with providers, and make a difference in your community today."</h4>
+            </div>
+            
+            
+            <div class="intropic">
+                
+                <img src = "9-png.png" >
+            </div>
+        </div>
+        
+
+    </div>
+    <hr/>
+
+<!--Food Cards-->
+<div class="black-bg">
+  <h2>Explore Surplus Foods Near you!</h2>
+  <hr>
+  <div class="job-cards" id="job-cards">
+    <% foods.forEach(food => { %>
+      <div class="card">
+        <div class="feeder"><h4>Posted by: <%= food.feeder %></h4></div>
+        <div class="image" style="background-image: url('<%= food.images[0] %>');"></div>
+        <div class="title"><%= food.title %></div>
+        <div class="description"><h4>Description:</h4><%= food.description %></div>
+        <div class="deadline"><h4>Deadline:</h4><span class="deadline-date"><%= food.deadline %></span></div>
+        <div class="price">$<%= food.price %></div>
+        <span class="chat-button">
+          <a href="/chat/<%= food._id %>">
+            <img src="chat-icon.jpg" alt="Chat Icon" class="chat-icon">
+          </a>
+        </span>
+        <% if (loggedInUsername === food.feeder) { %>
+          <button class="edit-button">Delete</button>
+        <% } %>
+      </div>
+    <% }); %>
+  </div>
+</div>
+
+
+    
+<!--Our team--> 
+
+    <div class="container6">
+        <div class="slide4">
+            <div class="team">
+                <h2 style = "font-family: heading-font;">
+                    OUR TEAM
+                </h2>
+                <br>
+            </div>
+            <div class="pics">    
+                <div class="parth">
+                    <img src="parth.jpeg" alt="">
+                    <h1 style = "font-family: monospace; font-size:20px;">Parth Sauguny</h1>
+                    <p style="font-size: 20px">Project <br>Documentation <br>& Reporting</p>
+                                        
+                </div>
+            
+                <div class="shivansh">
+                    <img src="shivansh.jpg" alt="">
+                    <h1 style = "font-family: monospace; font-size:20px;">Shivansh Srivastava</h1>
+                    <p style="font-size: 20px">Team <br>Management <br>& Leadership</<p>
+                </div>
+                <div class="sourav">
+                    <img src="sotrav1.jpeg" alt="">
+                    <h1 style = "font-family: monospace; font-size:20px;">Sourav Kispotta</h1>
+                    <p style="font-size: 20px">Technical <br>Oversight &<br> Decision-Making</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+   
+
+<!--footer-->
+    <hr>
+    <div class="container">
+        <footer class="footer">
+            <div class="container2">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/annapurna0.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tnc" style="color: white;">
+                    Terms & Conditions
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+    
+<!--Sticky feedback button-->    
+    <div class="container7">
+        <div class="stickybutton">
+            <a href="feedback.html">
+            <button class = "btn btn-info btn-lg" style="cursor: pointer; bottom: 50px;">
+                FEEDBACK
+                
+            </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
