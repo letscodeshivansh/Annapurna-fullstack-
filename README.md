@@ -65,8 +65,6 @@ We welcome contributions from developers, designers, and enthusiasts who are pas
 ## Contributors: 
 
 - Shivansh Srivastava
-- Jasmine Srivastava
-- Saurav Kispotta
 - Parth Sauguny
 
 
