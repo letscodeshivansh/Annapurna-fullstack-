@@ -6,6 +6,7 @@
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [TeckStack](#techstack)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
@@ -24,7 +25,7 @@
 - Used GPay API, so that the person can easily pay for his food.
 - Community Engagement: Foster collaboration and social impact by connecting users within the community to address hunger and food waste collectively.
 
-## TechStack 
+## TechStack 🤖
 <br>
 <div align="center">
 	<code><img width="55" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML"/></code>
@@ -39,7 +40,7 @@
 <br>
 
 
-## Installation 🤖
+## Installation 👨‍💻
 
 To install this Project, follow these steps:
 
