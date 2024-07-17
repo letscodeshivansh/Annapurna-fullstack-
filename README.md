@@ -1,6 +1,7 @@
 # Annapurna 🫂
 
-![mainlogo-photoaidcom-invert-removebg-preview](https://github.com/letscodeshivansh/Annapurna-fullstack-/assets/125864444/87a854b0-8616-4ecd-9136-7a6f42ff3208)
+<img src="https://github.com/letscodeshivansh/Annapurna-fullstack-/assets/125864444/87a854b0-8616-4ecd-9136-7a6f42ff3208" alt="mainlogo-photoaidcom-invert-removebg-preview" width="150"/>
+
 
 ## Table of Contents 🗒️
 
