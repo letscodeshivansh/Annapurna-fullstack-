@@ -81,12 +81,12 @@ SchemaBigInt.setters = [];
 SchemaBigInt.get = SchemaType.get;
 
 /**
- * Get/set the function used to cast arbitrary values to booleans.
+ * Get/set the function used to cast arbitrary values to bigints.
  *
  * #### Example:
  *
  *     // Make Mongoose cast empty string '' to false.
- *     const original = mongoose.Schema.BigInt.cast();
+ *     const original = mongoose.Schema.Types.BigInt.cast();
  *     mongoose.Schema.BigInt.cast(v => {
  *       if (v === '') {
  *         return false;
@@ -209,7 +209,7 @@ SchemaBigInt.prototype.castForQuery = function($conditional, val, context) {
       return handler.call(this, val);
     }
 
-    return this.applySetters(null, val, context);
+    return this.applySetters(val, context);
   }
 
   try {

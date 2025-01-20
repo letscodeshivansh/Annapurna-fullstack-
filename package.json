@@ -23,5 +23,6 @@
     "multer": "^1.4.5-lts.1",
     "path": "^0.12.7"
   },
-  "description": "<h1>About Website: </h1>\r <h3>\r \"Annapurna is a transformative platform dedicated to combating food waste and hunger by connecting surplus food providers with those in need. Through intuitive features and a user-friendly interface, individuals and organizations can easily donate or sell surplus food at discounted prices, ensuring that valuable resources are redistributed to those who need them most. Join us in our mission to foster a more sustainable and equitable society while ensuring that no edible food goes to waste\".</h3>\r <br>"
+  "description": "<h1>About Website: </h1>\r <h3>\r \"Annapurna is a transformative platform dedicated to combating food waste and hunger by connecting surplus food providers with those in need. Through intuitive features and a user-friendly interface, individuals and organizations can easily donate or sell surplus food at discounted prices, ensuring that valuable resources are redistributed to those who need them most. Join us in our mission to foster a more sustainable and equitable society while ensuring that no edible food goes to waste\".</h3>\r <br>",
+  "devDependencies": {}
 }
